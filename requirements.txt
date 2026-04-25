@@ -1,1 +1,34 @@
+# --- Core Deep Learning Frameworks ---
+torch>=2.1.0
+torchvision
+torchaudio
 
+# --- Vision-Language & Transformer Libraries ---
+transformers>=4.37.0
+accelerate>=0.26.0
+sentencepiece
+tiktoken
+einops
+
+# --- Parameter-Efficient Fine-Tuning (QLoRA) ---
+bitsandbytes>=0.41.0
+peft>=0.7.0
+
+# --- High-Performance & Memory Optimization ---
+# Note: flash-attn requires a GPU with compute capability 8.0+ (like your 4090s)
+flash-attn --no-build-isolation
+
+# --- Computer Vision & Data Processing ---
+opencv-python
+pillow
+pandas
+decord
+numpy
+
+# --- Demo & Utility ---
+gradio
+tqdm
+scipy
+cv2
+matplotlib requests tiktoken
+dotenv
