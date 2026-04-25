@@ -2,9 +2,9 @@
 ### Consulting Project | SS 2026 | LMU Munich
 
 **Project Members:** 
-* Lian Li ()
-* Sahibnoor Singh ()
-* Duc-Anh Nguyen (12433139)
+* Lian Li 
+* Sahibnoor Singh 
+* Duc-Anh Nguyen 
 
 
 ---
