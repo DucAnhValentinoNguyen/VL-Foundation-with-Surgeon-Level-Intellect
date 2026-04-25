@@ -11,7 +11,7 @@
 
 
 ## 📌 Project Overview
-The objective of this sprint was to develop a functional prototype of a surgical vision-language foundation model capable of expert-level scene understanding and clinically grounded dialogue. This weekend, we built an end-to-end pipeline—from raw MP4 ingestion to Parameter-Efficient Fine-Tuning (PEFT)—demonstrating how a modern multimodal architecture (Qwen2.5-VL-3B) can be adapted to overcome the clinical hallucination gaps present in base foundation models. The hardware we used is an RTX 4090s with 24 GB of VRAM and 82.6 TFLOPS of FP32 compute. 
+The objective is to develop a functional prototype of a surgical vision-language foundation model capable of expert-level scene understanding and clinically grounded dialogue. This weekend, we built an end-to-end pipeline—from raw MP4 ingestion to Parameter-Efficient Fine-Tuning (PEFT)—demonstrating how a modern multimodal architecture (Qwen2.5-VL-3B) can be adapted to overcome the clinical hallucination gaps present in base foundation models. The hardware we used is an RTX 4090s with 24 GB of VRAM and 82.6 TFLOPS of FP32 compute. 
 
 ---
 
