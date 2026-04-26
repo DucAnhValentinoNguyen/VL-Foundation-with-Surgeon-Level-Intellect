@@ -1,0 +1,24 @@
+# --- Core ML & Vision-Language Foundation ---
+torch
+torchvision
+transformers>=4.49.0
+qwen-vl-utils
+
+# --- Quantization & Fine-Tuning (QLoRA) ---
+accelerate
+bitsandbytes
+peft
+datasets
+
+# --- Data Processing & Computer Vision ---
+opencv-python
+pandas
+
+# --- Metrics, Visualization & Notebooks ---
+matplotlib
+scikit-learn
+tqdm
+ipykernel
+
+# --- Environment Management ---
+python-dotenv
