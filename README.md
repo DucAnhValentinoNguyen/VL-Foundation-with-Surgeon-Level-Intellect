@@ -38,6 +38,59 @@ Following the mandatory course template:
 ---
 
 ## ⚙️ Setup and Execution
+**For Task 1**
+
+Installation:
+
+1. Clone the repository:
+```bash
+git clone https://github.com/DucAnhValentinoNguyen/VL-Foundation-with-Surgeon-Level-Intellect.git
+```
+2. Install dependencies:
+```bash
+pip install -r  task1/requirements.txt
+```
+3. Data setup
+The data is distributed through a shared Google Drive folder. Please download or synchronize the data locally and place it under  the following structure before running the scripts:
+
+```text
+├──task1/
+|    ├── data/ 
+|    │   ├── testing/
+|    │   ├── training/
+```
+
+Shared folder link:
+https://drive.google.com/drive/folders/1zlW2PCKx1OrfQBOxMUCzln36k_G79Thc?usp=share_link
+
+
+Execution:
+
+1. Ground-truth generation
+```bash
+python task1/src/build_gt_jsonl.py
+```
+2. Zero-shot inference
+```bash
+python task1/src/run_zeroshot.py
+```
+3. Frozen-backbone fine-tuning
+```bash
+python task1/src/train_phase_head.py
+```
+4. LoRA-based fine-tuning
+```bash
+python task1/src/train_phase_lora.py
+```
+5. finetune inference
+```bash
+python task1/src/run_phase_finetuned_inference.py
+```
+6. Evaluation
+```bash
+python task1/src/eval_phase_predictions.py
+```
+
 **For Task 3**: Simultaneous assessment of instrument tracking precision, anatomical context, and clinical safety grounding.
 Environment:
 
