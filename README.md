@@ -38,7 +38,7 @@ Following the mandatory course template:
 ---
 
 ## ⚙️ Setup and Execution
-For Task 3: Simultaneous assessment of instrument tracking precision, anatomical context, and clinical safety grounding.
+**For Task 3**: Simultaneous assessment of instrument tracking precision, anatomical context, and clinical safety grounding.
 Environment:
 
 ```bash
