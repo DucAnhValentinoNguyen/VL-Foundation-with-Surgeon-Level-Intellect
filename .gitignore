@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# Hugging Face / model caches
+.cache/
+huggingface/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# LoRA/model outputs
+outputs/lora_adapter/
+outputs/lora_predictions/
+outputs/zero_shot_predictions/
+outputs/evaluation/
+
+# Optional: keep generated annotation/lora data if small
+# outputs/annotations/
+# outputs/lora_data/
+
+# Logs
+*.log
+wandb/
+runs/

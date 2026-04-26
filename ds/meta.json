@@ -1,0 +1,150 @@
+{
+    "classes": [
+        {
+            "title": "abdominal wall",
+            "description": "",
+            "shape": "bitmap",
+            "color": "#FF8000",
+            "geometry_config": {},
+            "id": 6551908,
+            "hotkey": ""
+        },
+        {
+            "title": "black background",
+            "description": "",
+            "shape": "bitmap",
+            "color": "#FFFF00",
+            "geometry_config": {},
+            "id": 6551907,
+            "hotkey": ""
+        },
+        {
+            "title": "blood",
+            "description": "",
+            "shape": "bitmap",
+            "color": "#FC4681",
+            "geometry_config": {},
+            "id": 6551914,
+            "hotkey": ""
+        },
+        {
+            "title": "connective tissue",
+            "description": "",
+            "shape": "bitmap",
+            "color": "#0F7B2C",
+            "geometry_config": {},
+            "id": 6551913,
+            "hotkey": ""
+        },
+        {
+            "title": "cystic duct",
+            "description": "",
+            "shape": "bitmap",
+            "color": "#00FFFF",
+            "geometry_config": {},
+            "id": 6551915,
+            "hotkey": ""
+        },
+        {
+            "title": "fat",
+            "description": "",
+            "shape": "bitmap",
+            "color": "#80BF80",
+            "geometry_config": {},
+            "id": 6551911,
+            "hotkey": ""
+        },
+        {
+            "title": "gallbladder",
+            "description": "",
+            "shape": "bitmap",
+            "color": "#00FF80",
+            "geometry_config": {},
+            "id": 6551917,
+            "hotkey": ""
+        },
+        {
+            "title": "gastrointestinal tract",
+            "description": "",
+            "shape": "bitmap",
+            "color": "#D384FD",
+            "geometry_config": {},
+            "id": 6551910,
+            "hotkey": ""
+        },
+        {
+            "title": "grasper",
+            "description": "",
+            "shape": "bitmap",
+            "color": "#FF00FF",
+            "geometry_config": {},
+            "id": 6551912,
+            "hotkey": ""
+        },
+        {
+            "title": "hepatic vein",
+            "description": "",
+            "shape": "bitmap",
+            "color": "#00FF00",
+            "geometry_config": {},
+            "id": 6551918,
+            "hotkey": ""
+        },
+        {
+            "title": "l-hook electrocautery",
+            "description": "",
+            "shape": "bitmap",
+            "color": "#B6003B",
+            "geometry_config": {},
+            "id": 6551916,
+            "hotkey": ""
+        },
+        {
+            "title": "liver",
+            "description": "",
+            "shape": "bitmap",
+            "color": "#0080FF",
+            "geometry_config": {},
+            "id": 6551909,
+            "hotkey": ""
+        },
+        {
+            "title": "liver ligament",
+            "description": "",
+            "shape": "bitmap",
+            "color": "#3406AB",
+            "geometry_config": {},
+            "id": 6551919,
+            "hotkey": ""
+        }
+    ],
+    "tags": [
+        {
+            "name": "sequence",
+            "value_type": "any_number",
+            "color": "#260F8A",
+            "id": 32556,
+            "hotkey": "",
+            "applicable_type": "all",
+            "classes": []
+        },
+        {
+            "name": "video id",
+            "value_type": "any_number",
+            "color": "#1D0F8A",
+            "id": 32555,
+            "hotkey": "",
+            "applicable_type": "all",
+            "classes": []
+        }
+    ],
+    "projectType": "images",
+    "projectSettings": {
+        "multiView": {
+            "enabled": false,
+            "tagName": null,
+            "tagId": null,
+            "isSynced": false
+        }
+    }
+}
