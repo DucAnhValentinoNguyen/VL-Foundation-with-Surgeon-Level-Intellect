@@ -20,7 +20,7 @@ Our project relies on the pre-trained **Qwen2.5-VL-3B** model as the foundation.
 
 
 ## 2. Methodology, Results and Discussion: 
-Please read our report in pdf **Project Approach Proposal** 
+Please read our report in **Project Approach Proposal.pdf** 
 
 ---
 
@@ -65,7 +65,7 @@ Following the mandatory course template:
 ---
 
 ## ⚙️ Setup and Execution
-**For Task 1**: the implementation of the phase recognition pipeline, including zero-shot inference, fine-tuning, and evaluation.
+### **For Task 1**: the implementation of the phase recognition pipeline, including zero-shot inference, fine-tuning, and evaluation.
 
 Installation:
 
@@ -121,7 +121,7 @@ python task1/src/eval_phase_predictions.py
 
 
 
-**For Task 2**: Expert-Level Surgical Communication
+### **For Task 2**: Expert-Level Surgical Communication
 
 
 ## Pipeline
@@ -267,12 +267,11 @@ Change in `config.py` to test larger models.
 
 This is a research prototype only. It is not for clinical decision-making.
 
-```
-```
 
 
 
-**For Task 3**: Simultaneous assessment of instrument tracking precision, anatomical context, and clinical safety grounding.
+
+### **For Task 3**: Simultaneous assessment of instrument tracking precision, anatomical context, and clinical safety grounding.
 Environment:
 
 ```bash
