@@ -20,7 +20,7 @@ Our project relies on the pre-trained **Qwen2.5-VL-3B** model as the foundation.
 
 
 ## 2. Methodology, Results and Discussion: 
-Please read our report
+Please read our report in pdf **Project Approach Proposal** 
 
 ---
 
@@ -28,10 +28,37 @@ Please read our report
 Following the mandatory course template:
 
 ```text
-├── data/                # Dataset lists and loaders
-├── src/                # Training scripts
-├── results/            # Demo results
-├── requirements.txt    # Environment dependencies
+├──task1/
+|    ├── data/ 
+|    │   ├── testing/
+|    │   ├── training/
+├──task2/
+|    ├── config.py
+|    ├── requirements.txt
+|    ├── notebooks/
+|    ├── scripts/
+|    │   ├── data/
+|    │   ├── modeling/
+|    │   ├── evaluation/
+|    │   └── prompts/
+|    ├── run_prepare_annotations.py
+|    ├── run_teacher_label.py
+|    ├── run_prepare_lora_data.py
+|    ├── run_zero_shot.py
+|    └── run_evaluation.py
+├──task3/
+|    ├── data/ 
+|    │   ├── dataset.py
+|    ├── src/ 
+|    │   ├── baseline_eval.py
+|    │   ├── evaluate_metrics.py
+|    │   ├── finetuned_results.jsonl
+|    │   ├── run_adapter_eval.py
+|    │   ├── temporal_analysis.py
+|    │   ├── temporal_segmentation.png
+|    │   ├── train_qlora.py
+|    │   ├── zero_shot_results.jsonl
+|    ├── requirements.txt    # Environment dependencies
 └── README.md
 
 ```
