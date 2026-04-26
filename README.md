@@ -91,6 +91,163 @@ python task1/src/run_phase_finetuned_inference.py
 python task1/src/eval_phase_predictions.py
 ```
 
+````markdown
+# for Task 2: Expert-Level Surgical Communication
+
+This folder contains a reproducible prototype for surgical VLM communication using **Qwen2.5-VL** on laparoscopic cholecystectomy frames.
+
+The goal is to test whether a general VLM can produce cautious, annotation-grounded surgical descriptions, and whether small LoRA adaptation improves safety.
+
+---
+
+## Pipeline
+
+```text
+CholecSeg8k frame + annotation
+        ↓
+Extract visible classes
+        ↓
+Generate annotation-grounded teacher answer
+        ↓
+Prepare Qwen LoRA data
+        ↓
+Run Qwen zero-shot
+        ↓
+Evaluate
+        ↓
+Fine-tune with LoRA
+        ↓
+Compare zero-shot vs LoRA
+````
+
+---
+
+## Dataset
+
+Uses the sample version of **CholecSeg8k**.
+
+Expected structure:
+
+```text
+task2/
+├── ds/
+│   ├── img/
+│   ├── ann/
+│   └── meta.json
+```
+
+Dataset split:
+
+```text
+Train: 674 frames
+Validation: 146 frames
+Test: 143 frames
+```
+
+---
+
+## Main files
+
+```text
+task2/
+├── config.py
+├── requirements.txt
+├── notebooks/
+├── scripts/
+│   ├── data/
+│   ├── modeling/
+│   ├── evaluation/
+│   └── prompts/
+├── run_prepare_annotations.py
+├── run_teacher_label.py
+├── run_prepare_lora_data.py
+├── run_zero_shot.py
+└── run_evaluation.py
+```
+
+---
+
+## Run
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Prepare data:
+
+```bash
+python run_prepare_annotations.py
+python run_teacher_label.py
+python run_prepare_lora_data.py
+```
+
+Run zero-shot and evaluation on GPU:
+
+```bash
+python run_zero_shot.py
+python run_evaluation.py
+```
+
+Main notebook:
+
+```text
+notebooks/task5_expert_surgical_communication_reproducible.ipynb
+```
+
+---
+
+## Evaluation
+
+Each model output is scored from 0 to 5:
+
+| Criterion           | Meaning                         |
+| ------------------- | ------------------------------- |
+| JSON valid          | Correct output format           |
+| Hallucination-free  | No unsupported anatomy/tools    |
+| Phase safe          | No unsafe phase overclaim       |
+| Uncertainty present | Communicates uncertainty        |
+| Expert style        | Uses cautious surgical language |
+
+---
+
+## Results
+
+20 held-out test frames:
+
+| Metric              | Zero-shot |   LoRA |
+| ------------------- | --------: | -----: |
+| JSON valid          |      1.00 |   1.00 |
+| Hallucination-free  |      0.00 |   0.00 |
+| Phase-safe          |      0.00 |   0.70 |
+| Uncertainty-present |      1.00 |   1.00 |
+| Expert-style        |      1.00 |   1.00 |
+| Average score       |    3.00/5 | 3.70/5 |
+
+LoRA improved phase safety, but hallucination remains a limitation.
+
+---
+
+## Model
+
+```text
+Qwen/Qwen2.5-VL-3B-Instruct
+```
+
+Change in `config.py` to test larger models.
+
+---
+
+## Note
+
+This is a research prototype only. It is not for clinical decision-making.
+
+```
+```
+
+
+
 **For Task 3**: Simultaneous assessment of instrument tracking precision, anatomical context, and clinical safety grounding.
 Environment:
 
