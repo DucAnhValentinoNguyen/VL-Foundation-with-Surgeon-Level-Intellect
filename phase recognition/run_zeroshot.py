@@ -1,16 +1,18 @@
 import json
+import os
 import torch
 from pathlib import Path
 from datasets import load_dataset
 from transformers import AutoProcessor, AutoModelForImageTextToText, BitsAndBytesConfig
 from qwen_vl_utils import process_vision_info
 from utils import safe_parse_json, schema_valid_phase_segments, segments_to_sampled_phase_labels
+from build_gt_jsonl import process_split
 
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "data"
-TEST_JSONL = DATA_DIR / "testing" / "gt_10s.jsonl"
-PRED_OUT = DATA_DIR / "testing" / "zeroshot_predictions.jsonl"
+PRED_OUT = DATA_DIR / "outputs" / "zeroshot_predictions.jsonl"
+PRED_OUT.parent.mkdir(parents=True, exist_ok=True)
 MODEL_NAME = "Qwen/Qwen2.5-VL-3B-Instruct"
 
 PRIOR_RULE = (
@@ -195,5 +197,11 @@ def run_zeroshot_phase(test_jsonl, model_name, pred_out):
 
 
 if __name__ == "__main__":
+    
 
-    run_zeroshot_phase(TEST_JSONL, MODEL_NAME, PRED_OUT)
+    test_dir = DATA_DIR / "testing"
+    gt_name = "gt_10s.jsonl"
+    test_jsonl = test_dir / gt_name
+
+    process_split(test_dir, gt_name=gt_name, sample_stride_sec=10)
+    run_zeroshot_phase(str(test_jsonl), MODEL_NAME, str(PRED_OUT))
