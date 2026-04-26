@@ -37,7 +37,7 @@ Following the mandatory course template:
 ```
 ---
 
-⚙️ Setup and Execution
+## ⚙️ Setup and Execution
 For Task 3: Simultaneous assessment of instrument tracking precision, anatomical context, and clinical safety grounding.
 Environment:
 
@@ -51,7 +51,7 @@ uv pip install -r requirements.txt
 
 Load Data
 ```bash
-cd ./data/surgvu
+cd task3/data/surgvu
 # Download the validation set (includes clips already sampled at 1 FPS)
 wget https://storage.googleapis.com/isi-surgvu/cat1_test_set_public.zip
 unzip cat1_test_set_public.zip
