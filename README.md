@@ -60,11 +60,13 @@ wget https://storage.googleapis.com/isi-surgvu/surgvu24_labels_updated_v2.zip
 unzip surgvu24_labels_updated_v2.zip
 # Preprocess data
 uv run dataset.py
+```
 
 Zero-shot
 ```bash
 cd ../src & uv run baseline_eval.py
 ```
+
 
 Fine-tuning:
 ```bash
