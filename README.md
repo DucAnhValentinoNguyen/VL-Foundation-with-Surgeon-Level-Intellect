@@ -120,7 +120,7 @@ python task1/src/eval_phase_predictions.py
 ```
 
 
-
+---
 ### **For Task 2**: Expert-Level Surgical Communication
 
 
@@ -269,7 +269,7 @@ This is a research prototype only. It is not for clinical decision-making.
 
 
 
-
+---
 
 ### **For Task 3**: Simultaneous assessment of instrument tracking precision, anatomical context, and clinical safety grounding.
 Environment:
