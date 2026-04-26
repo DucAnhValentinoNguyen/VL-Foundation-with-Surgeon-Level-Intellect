@@ -91,14 +91,9 @@ python task1/src/run_phase_finetuned_inference.py
 python task1/src/eval_phase_predictions.py
 ```
 
-````markdown
-# for Task 2: Expert-Level Surgical Communication
 
-This folder contains a reproducible prototype for surgical VLM communication using **Qwen2.5-VL** on laparoscopic cholecystectomy frames.
+**For Task 2**: Expert-Level Surgical Communication
 
-The goal is to test whether a general VLM can produce cautious, annotation-grounded surgical descriptions, and whether small LoRA adaptation improves safety.
-
----
 
 ## Pipeline
 
