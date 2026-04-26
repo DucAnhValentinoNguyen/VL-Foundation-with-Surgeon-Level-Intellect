@@ -82,7 +82,7 @@ python task1/src/train_phase_head.py
 ```bash
 python task1/src/train_phase_lora.py
 ```
-5. finetune inference
+5. Fine-tuned inference
 ```bash
 python task1/src/run_phase_finetuned_inference.py
 ```
