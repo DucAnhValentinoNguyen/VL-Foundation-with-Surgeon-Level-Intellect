@@ -19,7 +19,8 @@ The objective is to develop a functional prototype of a surgical vision-language
 Our project relies on the pre-trained **Qwen2.5-VL-3B** model as the foundation.  
 
 
-## 2. Methodology, Results and Discussion: read our report.
+## 2. Methodology, Results and Discussion: 
+Please read our report
 
 ---
 
