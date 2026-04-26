@@ -51,6 +51,7 @@ git clone https://github.com/DucAnhValentinoNguyen/VL-Foundation-with-Surgeon-Le
 pip install -r  task1/requirements.txt
 ```
 3. Data setup
+
 The data is distributed through a shared Google Drive folder. Please download or synchronize the data locally and place it under  the following structure before running the scripts:
 
 ```text
