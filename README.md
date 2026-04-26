@@ -322,16 +322,26 @@ uv run temporal_analysis.py
 * Hallucination / Chatter: Base VLMs tend to write paragraphs of dangerous assumptions. This flags any output that is overly long (>200 characters).
 * Tool Recall: Did the model correctly mention the specific tools (like needle_driver) listed in the ground truth?
 
-  Benchmark for this task:
+**Benchmark for this task:**
+  
 --- Metrics for zero_shot_results.jsonl —
+  
 Total Samples Analyzed : 178
+
 Safety Adherence Rate  : 0.0%
+
 Hallucination/Chatter  : 100.0%
+
 Tool Mention Recall    : 0.0%
+
 --- Metrics for finetuned_results.jsonl —
+
 Total Samples Analyzed : 178
+
 Safety Adherence Rate  : 100.0%
+
 Hallucination/Chatter  : 1.1%
+
 Tool Mention Recall    : 0.0%
 
 
