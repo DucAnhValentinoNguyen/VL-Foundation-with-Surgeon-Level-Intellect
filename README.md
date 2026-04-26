@@ -19,29 +19,7 @@ The objective is to develop a functional prototype of a surgical vision-language
 Our project relies on the pre-trained **Qwen2.5-VL-3B** model as the foundation.  
 
 
-## 2. Methodology
-
-
-
-### Stage 1: Zero-Shot Learning
-
-
----
-
-### Stage 2: Fine-Tuning Strategies
-
-
-**Interpretation:** 
-
-
----
-
-## 3. Discussion of Results and Limitations
-
-### Results Analysis
-
-
-### Limitations & Future Work
+## 2. Methodology, Results and Discussion: read our report.
 
 ---
 
