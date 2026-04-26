@@ -322,6 +322,19 @@ uv run temporal_analysis.py
 * Hallucination / Chatter: Base VLMs tend to write paragraphs of dangerous assumptions. This flags any output that is overly long (>200 characters).
 * Tool Recall: Did the model correctly mention the specific tools (like needle_driver) listed in the ground truth?
 
+  Benchmark for this task:
+--- Metrics for zero_shot_results.jsonl —
+Total Samples Analyzed : 178
+Safety Adherence Rate  : 0.0%
+Hallucination/Chatter  : 100.0%
+Tool Mention Recall    : 0.0%
+--- Metrics for finetuned_results.jsonl —
+Total Samples Analyzed : 178
+Safety Adherence Rate  : 100.0%
+Hallucination/Chatter  : 1.1%
+Tool Mention Recall    : 0.0%
+
+
 **temporal_analysis.py** evaluates if the model can consistently track the state of the surgery over time, as surgery is not a single static image; it is a long, continuous process. It analyzes the text output of the model and maps specific tools to surgical phases (e.g., if it predicts "needle_driver", the script tags that frame as the "Suturing Phase"). Then it plots these phases continuously over a timeline, generating a visual chart of the surgery's progression.
 
 => This should show that the pipeline can handle **structured temporal processing** and isn't just making isolated guesses frame-by-frame.
