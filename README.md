@@ -38,7 +38,7 @@ Following the mandatory course template:
 ---
 
 ## ⚙️ Setup and Execution
-**For Task 1**
+**For Task 1**: the implementation of the phase recognition pipeline, including zero-shot inference, fine-tuning, and evaluation.
 
 Installation:
 
