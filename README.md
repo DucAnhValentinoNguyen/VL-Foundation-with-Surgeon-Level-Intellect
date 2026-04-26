@@ -18,8 +18,11 @@ The objective is to develop a functional prototype of a surgical vision-language
 ## 1. Model Architecture
 Our project relies on the pre-trained **Qwen2.5-VL-3B** model as the foundation.  
 
----
+
 ## 2. Methodology
+
+
+
 ### Stage 1: Zero-Shot Learning
 
 
@@ -56,19 +59,46 @@ Following the mandatory course template:
 ---
 
 ⚙️ Setup and Execution
+For Task 3: Simultaneous assessment of instrument tracking precision, anatomical context, and clinical safety grounding.
 Environment:
 
 ```bash
-pip install -r requirements.txt
+# install uv (if needed)
+# for Linux
+curl -LsSf https://astral.sh/uv/install.sh | sh
+# install dependencies
+uv pip install -r requirements.txt
 ```
 
-Run Zero-Shot Baseline:
+Load Data
 ```bash
-```
+cd ./data/surgvu
+# Download the validation set (includes clips already sampled at 1 FPS)
+wget https://storage.googleapis.com/isi-surgvu/cat1_test_set_public.zip
+unzip cat1_test_set_public.zip
+# Download the updated labels
+wget https://storage.googleapis.com/isi-surgvu/surgvu24_labels_updated_v2.zip
+unzip surgvu24_labels_updated_v2.zip
+# Preprocess data
+uv run dataset.py
 
+Zero-shot
+```bash
+cd ../src & uv run baseline_eval.py
+```
 
 Fine-tuning:
 ```bash
+uv run train_qlora.py
 ```
+
+Evaluation:
+```bash
+uv run adapter_eval.py
+uv run evaluate_metrics.py
+# evaluate how the model's performance evolves over the duration of a surgical procedure
+uv run temporal_analysis.py
+```
+
 
 
