@@ -1,4 +1,4 @@
-# Vision Language Foundation with Surgeon Level Intellect: Technical Sprint Report
+# Vision Language Foundation with Surgeon Level Intellect: Technical Report
 ### Consulting Project | SS 2026 | LMU Munich
 
 **Project Members:** 
