@@ -25,7 +25,6 @@ Please read our report in **Project Approach Proposal.pdf**
 ---
 
 ## 🛠 Repository Structure
-Following the mandatory course template:
 
 ```text
 ├──task1/
