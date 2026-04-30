@@ -31,6 +31,24 @@ Please read our report in **Project Approach Proposal.pdf**
 |    ├── data/ 
 |    │   ├── testing/
 |    │   ├── training/
+|    ├── src/ 
+|    │   ├── build_gt_jsonl.py
+|    │   ├── eval_phase_predictions.py
+|    │   ├── phase_data.py
+|    │   ├── phase_model.py
+|    │   ├── plots.py
+|    │   ├── run_phase_finetuned_inference.py
+|    │   ├── train_phase_lora.py
+|    │   ├── utils.py
+|    ├── results/ 
+|    │   ├── eval_finetuned_phase/
+|    │   ├── eval_zeroshot_phase/
+|    │   ├── visualizations/
+|    │   ├── finetuned_predictions.jsonl
+|    │   ├── train_history.json
+|    │   ├── zeroshot_predictions.jsonl
+|    ├── notebook.ipynb
+|    ├── requirements.txt
 ├──task2/
 |    ├── config.py
 |    ├── requirements.txt
