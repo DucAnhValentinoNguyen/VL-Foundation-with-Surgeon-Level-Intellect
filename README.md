@@ -72,7 +72,8 @@ Dataset for phase 1: testing SigLIP2 Encoder
 |    |   │   │   └── cecum/ 1 vid
 |    |   │   ├── pathological-findings/
 |    |   │   │   |
-|    |   │   │   ├── polyps/
+|    |   │   │   ├── polyps/ 1 vid
+
 |    |   │   │   ├── colitis/ 3 vids
 |    |   │   │   ├── anastomotic-leakage/ 1 vid
 |    |   │   │   └── parasites/ 1 vid
