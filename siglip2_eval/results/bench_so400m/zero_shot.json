@@ -1,0 +1,614 @@
+{
+  "generic_prompts__closed_set": {
+    "top1": 0.279520295202952,
+    "top5": 0.5438191881918819,
+    "balanced_acc": 0.17860554377899335,
+    "macro_f1": 0.1264115540379801,
+    "per_class": {
+      "barretts": {
+        "n": 9,
+        "recall": 0.0
+      },
+      "barretts-short-segment": {
+        "n": 10,
+        "recall": 0.1
+      },
+      "bbps-0-1": {
+        "n": 142,
+        "recall": 0.16901408450704225
+      },
+      "bbps-2-3": {
+        "n": 256,
+        "recall": 0.0
+      },
+      "cecum": {
+        "n": 221,
+        "recall": 0.0
+      },
+      "dyed-lifted-polyps": {
+        "n": 193,
+        "recall": 0.41968911917098445
+      },
+      "dyed-resection-margins": {
+        "n": 187,
+        "recall": 0.9144385026737968
+      },
+      "esophagitis-a": {
+        "n": 63,
+        "recall": 0.3492063492063492
+      },
+      "esophagitis-b-d": {
+        "n": 47,
+        "recall": 0.0
+      },
+      "hemorrhoids": {
+        "n": 1,
+        "recall": 0.0
+      },
+      "ileum": {
+        "n": 2,
+        "recall": 0.0
+      },
+      "impacted-stool": {
+        "n": 29,
+        "recall": 0.034482758620689655
+      },
+      "polyps": {
+        "n": 204,
+        "recall": 0.8970588235294118
+      },
+      "pylorus": {
+        "n": 205,
+        "recall": 0.0
+      },
+      "retroflex-rectum": {
+        "n": 84,
+        "recall": 0.0
+      },
+      "retroflex-stomach": {
+        "n": 149,
+        "recall": 0.7651006711409396
+      },
+      "ulcerative-colitis-grade-0-1": {
+        "n": 9,
+        "recall": 0.1111111111111111
+      },
+      "ulcerative-colitis-grade-1": {
+        "n": 43,
+        "recall": 0.0
+      },
+      "ulcerative-colitis-grade-1-2": {
+        "n": 3,
+        "recall": 0.0
+      },
+      "ulcerative-colitis-grade-2": {
+        "n": 97,
+        "recall": 0.0
+      },
+      "ulcerative-colitis-grade-2-3": {
+        "n": 4,
+        "recall": 0.0
+      },
+      "ulcerative-colitis-grade-3": {
+        "n": 23,
+        "recall": 0.34782608695652173
+      },
+      "z-line": {
+        "n": 187,
+        "recall": 0.0
+      }
+    },
+    "importance_weighted": {
+      "iw_accuracy": 0.17860554377899326,
+      "src_prior": {
+        "barretts": 0.004151291512915129,
+        "barretts-short-segment": 0.004612546125461255,
+        "bbps-0-1": 0.06549815498154982,
+        "bbps-2-3": 0.11808118081180811,
+        "cecum": 0.10193726937269372,
+        "dyed-lifted-polyps": 0.08902214022140222,
+        "dyed-resection-margins": 0.08625461254612546,
+        "esophagitis-a": 0.029059040590405903,
+        "esophagitis-b-d": 0.021678966789667898,
+        "hemorrhoids": 0.00046125461254612545,
+        "ileum": 0.0009225092250922509,
+        "impacted-stool": 0.013376383763837638,
+        "polyps": 0.0940959409594096,
+        "pylorus": 0.09455719557195572,
+        "retroflex-rectum": 0.03874538745387454,
+        "retroflex-stomach": 0.06872693726937269,
+        "ulcerative-colitis-grade-0-1": 0.004151291512915129,
+        "ulcerative-colitis-grade-1": 0.019833948339483393,
+        "ulcerative-colitis-grade-1-2": 0.0013837638376383763,
+        "ulcerative-colitis-grade-2": 0.04474169741697417,
+        "ulcerative-colitis-grade-2-3": 0.0018450184501845018,
+        "ulcerative-colitis-grade-3": 0.010608856088560886,
+        "z-line": 0.08625461254612546
+      },
+      "target_prior": {
+        "barretts": 0.043478260869565216,
+        "barretts-short-segment": 0.043478260869565216,
+        "bbps-0-1": 0.043478260869565216,
+        "bbps-2-3": 0.043478260869565216,
+        "cecum": 0.043478260869565216,
+        "dyed-lifted-polyps": 0.043478260869565216,
+        "dyed-resection-margins": 0.043478260869565216,
+        "esophagitis-a": 0.043478260869565216,
+        "esophagitis-b-d": 0.043478260869565216,
+        "hemorrhoids": 0.043478260869565216,
+        "ileum": 0.043478260869565216,
+        "impacted-stool": 0.043478260869565216,
+        "polyps": 0.043478260869565216,
+        "pylorus": 0.043478260869565216,
+        "retroflex-rectum": 0.043478260869565216,
+        "retroflex-stomach": 0.043478260869565216,
+        "ulcerative-colitis-grade-0-1": 0.043478260869565216,
+        "ulcerative-colitis-grade-1": 0.043478260869565216,
+        "ulcerative-colitis-grade-1-2": 0.043478260869565216,
+        "ulcerative-colitis-grade-2": 0.043478260869565216,
+        "ulcerative-colitis-grade-2-3": 0.043478260869565216,
+        "ulcerative-colitis-grade-3": 0.043478260869565216,
+        "z-line": 0.043478260869565216
+      }
+    }
+  },
+  "generic_prompts__openset_with_video_classes": {
+    "top1": 0.2606088560885609,
+    "top5": 0.5087638376383764,
+    "balanced_acc": 0.15326329234279754,
+    "macro_f1": 0.08423944221501273,
+    "per_class": {
+      "barretts": {
+        "n": 9,
+        "recall": 0.0
+      },
+      "barretts-short-segment": {
+        "n": 10,
+        "recall": 0.0
+      },
+      "bbps-0-1": {
+        "n": 142,
+        "recall": 0.13380281690140844
+      },
+      "bbps-2-3": {
+        "n": 256,
+        "recall": 0.0
+      },
+      "cecum": {
+        "n": 221,
+        "recall": 0.0
+      },
+      "dyed-lifted-polyps": {
+        "n": 193,
+        "recall": 0.41968911917098445
+      },
+      "dyed-resection-margins": {
+        "n": 187,
+        "recall": 0.9144385026737968
+      },
+      "esophagitis-a": {
+        "n": 63,
+        "recall": 0.031746031746031744
+      },
+      "esophagitis-b-d": {
+        "n": 47,
+        "recall": 0.0
+      },
+      "hemorrhoids": {
+        "n": 1,
+        "recall": 0.0
+      },
+      "ileum": {
+        "n": 2,
+        "recall": 0.0
+      },
+      "impacted-stool": {
+        "n": 29,
+        "recall": 0.034482758620689655
+      },
+      "polyps": {
+        "n": 204,
+        "recall": 0.8774509803921569
+      },
+      "pylorus": {
+        "n": 205,
+        "recall": 0.0
+      },
+      "retroflex-rectum": {
+        "n": 84,
+        "recall": 0.0
+      },
+      "retroflex-stomach": {
+        "n": 149,
+        "recall": 0.697986577181208
+      },
+      "ulcerative-colitis-grade-0-1": {
+        "n": 9,
+        "recall": 0.1111111111111111
+      },
+      "ulcerative-colitis-grade-1": {
+        "n": 43,
+        "recall": 0.0
+      },
+      "ulcerative-colitis-grade-1-2": {
+        "n": 3,
+        "recall": 0.0
+      },
+      "ulcerative-colitis-grade-2": {
+        "n": 97,
+        "recall": 0.0
+      },
+      "ulcerative-colitis-grade-2-3": {
+        "n": 4,
+        "recall": 0.0
+      },
+      "ulcerative-colitis-grade-3": {
+        "n": 23,
+        "recall": 0.30434782608695654
+      },
+      "z-line": {
+        "n": 187,
+        "recall": 0.0
+      }
+    },
+    "importance_weighted": {
+      "iw_accuracy": 0.15326329234279748,
+      "src_prior": {
+        "barretts": 0.004151291512915129,
+        "barretts-short-segment": 0.004612546125461255,
+        "bbps-0-1": 0.06549815498154982,
+        "bbps-2-3": 0.11808118081180811,
+        "cecum": 0.10193726937269372,
+        "dyed-lifted-polyps": 0.08902214022140222,
+        "dyed-resection-margins": 0.08625461254612546,
+        "esophagitis-a": 0.029059040590405903,
+        "esophagitis-b-d": 0.021678966789667898,
+        "hemorrhoids": 0.00046125461254612545,
+        "ileum": 0.0009225092250922509,
+        "impacted-stool": 0.013376383763837638,
+        "polyps": 0.0940959409594096,
+        "pylorus": 0.09455719557195572,
+        "retroflex-rectum": 0.03874538745387454,
+        "retroflex-stomach": 0.06872693726937269,
+        "ulcerative-colitis-grade-0-1": 0.004151291512915129,
+        "ulcerative-colitis-grade-1": 0.019833948339483393,
+        "ulcerative-colitis-grade-1-2": 0.0013837638376383763,
+        "ulcerative-colitis-grade-2": 0.04474169741697417,
+        "ulcerative-colitis-grade-2-3": 0.0018450184501845018,
+        "ulcerative-colitis-grade-3": 0.010608856088560886,
+        "z-line": 0.08625461254612546
+      },
+      "target_prior": {
+        "barretts": 0.043478260869565216,
+        "barretts-short-segment": 0.043478260869565216,
+        "bbps-0-1": 0.043478260869565216,
+        "bbps-2-3": 0.043478260869565216,
+        "cecum": 0.043478260869565216,
+        "dyed-lifted-polyps": 0.043478260869565216,
+        "dyed-resection-margins": 0.043478260869565216,
+        "esophagitis-a": 0.043478260869565216,
+        "esophagitis-b-d": 0.043478260869565216,
+        "hemorrhoids": 0.043478260869565216,
+        "ileum": 0.043478260869565216,
+        "impacted-stool": 0.043478260869565216,
+        "polyps": 0.043478260869565216,
+        "pylorus": 0.043478260869565216,
+        "retroflex-rectum": 0.043478260869565216,
+        "retroflex-stomach": 0.043478260869565216,
+        "ulcerative-colitis-grade-0-1": 0.043478260869565216,
+        "ulcerative-colitis-grade-1": 0.043478260869565216,
+        "ulcerative-colitis-grade-1-2": 0.043478260869565216,
+        "ulcerative-colitis-grade-2": 0.043478260869565216,
+        "ulcerative-colitis-grade-2-3": 0.043478260869565216,
+        "ulcerative-colitis-grade-3": 0.043478260869565216,
+        "z-line": 0.043478260869565216
+      }
+    }
+  },
+  "endoscopy_prompts__closed_set": {
+    "top1": 0.27767527675276754,
+    "top5": 0.6494464944649446,
+    "balanced_acc": 0.20275478486734472,
+    "macro_f1": 0.13355291908118924,
+    "per_class": {
+      "barretts": {
+        "n": 9,
+        "recall": 0.0
+      },
+      "barretts-short-segment": {
+        "n": 10,
+        "recall": 0.0
+      },
+      "bbps-0-1": {
+        "n": 142,
+        "recall": 0.0
+      },
+      "bbps-2-3": {
+        "n": 256,
+        "recall": 0.015625
+      },
+      "cecum": {
+        "n": 221,
+        "recall": 0.22624434389140272
+      },
+      "dyed-lifted-polyps": {
+        "n": 193,
+        "recall": 0.31088082901554404
+      },
+      "dyed-resection-margins": {
+        "n": 187,
+        "recall": 0.9358288770053476
+      },
+      "esophagitis-a": {
+        "n": 63,
+        "recall": 0.0
+      },
+      "esophagitis-b-d": {
+        "n": 47,
+        "recall": 0.2127659574468085
+      },
+      "hemorrhoids": {
+        "n": 1,
+        "recall": 0.0
+      },
+      "ileum": {
+        "n": 2,
+        "recall": 0.0
+      },
+      "impacted-stool": {
+        "n": 29,
+        "recall": 0.4827586206896552
+      },
+      "polyps": {
+        "n": 204,
+        "recall": 0.6911764705882353
+      },
+      "pylorus": {
+        "n": 205,
+        "recall": 0.0
+      },
+      "retroflex-rectum": {
+        "n": 84,
+        "recall": 0.0
+      },
+      "retroflex-stomach": {
+        "n": 149,
+        "recall": 0.8859060402684564
+      },
+      "ulcerative-colitis-grade-0-1": {
+        "n": 9,
+        "recall": 0.0
+      },
+      "ulcerative-colitis-grade-1": {
+        "n": 43,
+        "recall": 0.0
+      },
+      "ulcerative-colitis-grade-1-2": {
+        "n": 3,
+        "recall": 0.0
+      },
+      "ulcerative-colitis-grade-2": {
+        "n": 97,
+        "recall": 0.0
+      },
+      "ulcerative-colitis-grade-2-3": {
+        "n": 4,
+        "recall": 0.25
+      },
+      "ulcerative-colitis-grade-3": {
+        "n": 23,
+        "recall": 0.6521739130434783
+      },
+      "z-line": {
+        "n": 187,
+        "recall": 0.0
+      }
+    },
+    "importance_weighted": {
+      "iw_accuracy": 0.20275478486734463,
+      "src_prior": {
+        "barretts": 0.004151291512915129,
+        "barretts-short-segment": 0.004612546125461255,
+        "bbps-0-1": 0.06549815498154982,
+        "bbps-2-3": 0.11808118081180811,
+        "cecum": 0.10193726937269372,
+        "dyed-lifted-polyps": 0.08902214022140222,
+        "dyed-resection-margins": 0.08625461254612546,
+        "esophagitis-a": 0.029059040590405903,
+        "esophagitis-b-d": 0.021678966789667898,
+        "hemorrhoids": 0.00046125461254612545,
+        "ileum": 0.0009225092250922509,
+        "impacted-stool": 0.013376383763837638,
+        "polyps": 0.0940959409594096,
+        "pylorus": 0.09455719557195572,
+        "retroflex-rectum": 0.03874538745387454,
+        "retroflex-stomach": 0.06872693726937269,
+        "ulcerative-colitis-grade-0-1": 0.004151291512915129,
+        "ulcerative-colitis-grade-1": 0.019833948339483393,
+        "ulcerative-colitis-grade-1-2": 0.0013837638376383763,
+        "ulcerative-colitis-grade-2": 0.04474169741697417,
+        "ulcerative-colitis-grade-2-3": 0.0018450184501845018,
+        "ulcerative-colitis-grade-3": 0.010608856088560886,
+        "z-line": 0.08625461254612546
+      },
+      "target_prior": {
+        "barretts": 0.043478260869565216,
+        "barretts-short-segment": 0.043478260869565216,
+        "bbps-0-1": 0.043478260869565216,
+        "bbps-2-3": 0.043478260869565216,
+        "cecum": 0.043478260869565216,
+        "dyed-lifted-polyps": 0.043478260869565216,
+        "dyed-resection-margins": 0.043478260869565216,
+        "esophagitis-a": 0.043478260869565216,
+        "esophagitis-b-d": 0.043478260869565216,
+        "hemorrhoids": 0.043478260869565216,
+        "ileum": 0.043478260869565216,
+        "impacted-stool": 0.043478260869565216,
+        "polyps": 0.043478260869565216,
+        "pylorus": 0.043478260869565216,
+        "retroflex-rectum": 0.043478260869565216,
+        "retroflex-stomach": 0.043478260869565216,
+        "ulcerative-colitis-grade-0-1": 0.043478260869565216,
+        "ulcerative-colitis-grade-1": 0.043478260869565216,
+        "ulcerative-colitis-grade-1-2": 0.043478260869565216,
+        "ulcerative-colitis-grade-2": 0.043478260869565216,
+        "ulcerative-colitis-grade-2-3": 0.043478260869565216,
+        "ulcerative-colitis-grade-3": 0.043478260869565216,
+        "z-line": 0.043478260869565216
+      }
+    }
+  },
+  "endoscopy_prompts__openset_with_video_classes": {
+    "top1": 0.21171586715867158,
+    "top5": 0.5322878228782287,
+    "balanced_acc": 0.1459797688719705,
+    "macro_f1": 0.07698764576377154,
+    "per_class": {
+      "barretts": {
+        "n": 9,
+        "recall": 0.0
+      },
+      "barretts-short-segment": {
+        "n": 10,
+        "recall": 0.0
+      },
+      "bbps-0-1": {
+        "n": 142,
+        "recall": 0.0
+      },
+      "bbps-2-3": {
+        "n": 256,
+        "recall": 0.015625
+      },
+      "cecum": {
+        "n": 221,
+        "recall": 0.0
+      },
+      "dyed-lifted-polyps": {
+        "n": 193,
+        "recall": 0.3005181347150259
+      },
+      "dyed-resection-margins": {
+        "n": 187,
+        "recall": 0.8770053475935828
+      },
+      "esophagitis-a": {
+        "n": 63,
+        "recall": 0.0
+      },
+      "esophagitis-b-d": {
+        "n": 47,
+        "recall": 0.10638297872340426
+      },
+      "hemorrhoids": {
+        "n": 1,
+        "recall": 0.0
+      },
+      "ileum": {
+        "n": 2,
+        "recall": 0.0
+      },
+      "impacted-stool": {
+        "n": 29,
+        "recall": 0.10344827586206896
+      },
+      "polyps": {
+        "n": 204,
+        "recall": 0.45098039215686275
+      },
+      "pylorus": {
+        "n": 205,
+        "recall": 0.0
+      },
+      "retroflex-rectum": {
+        "n": 84,
+        "recall": 0.0
+      },
+      "retroflex-stomach": {
+        "n": 149,
+        "recall": 0.8187919463087249
+      },
+      "ulcerative-colitis-grade-0-1": {
+        "n": 9,
+        "recall": 0.0
+      },
+      "ulcerative-colitis-grade-1": {
+        "n": 43,
+        "recall": 0.0
+      },
+      "ulcerative-colitis-grade-1-2": {
+        "n": 3,
+        "recall": 0.0
+      },
+      "ulcerative-colitis-grade-2": {
+        "n": 97,
+        "recall": 0.0
+      },
+      "ulcerative-colitis-grade-2-3": {
+        "n": 4,
+        "recall": 0.25
+      },
+      "ulcerative-colitis-grade-3": {
+        "n": 23,
+        "recall": 0.43478260869565216
+      },
+      "z-line": {
+        "n": 187,
+        "recall": 0.0
+      }
+    },
+    "importance_weighted": {
+      "iw_accuracy": 0.14597976887197048,
+      "src_prior": {
+        "barretts": 0.004151291512915129,
+        "barretts-short-segment": 0.004612546125461255,
+        "bbps-0-1": 0.06549815498154982,
+        "bbps-2-3": 0.11808118081180811,
+        "cecum": 0.10193726937269372,
+        "dyed-lifted-polyps": 0.08902214022140222,
+        "dyed-resection-margins": 0.08625461254612546,
+        "esophagitis-a": 0.029059040590405903,
+        "esophagitis-b-d": 0.021678966789667898,
+        "hemorrhoids": 0.00046125461254612545,
+        "ileum": 0.0009225092250922509,
+        "impacted-stool": 0.013376383763837638,
+        "polyps": 0.0940959409594096,
+        "pylorus": 0.09455719557195572,
+        "retroflex-rectum": 0.03874538745387454,
+        "retroflex-stomach": 0.06872693726937269,
+        "ulcerative-colitis-grade-0-1": 0.004151291512915129,
+        "ulcerative-colitis-grade-1": 0.019833948339483393,
+        "ulcerative-colitis-grade-1-2": 0.0013837638376383763,
+        "ulcerative-colitis-grade-2": 0.04474169741697417,
+        "ulcerative-colitis-grade-2-3": 0.0018450184501845018,
+        "ulcerative-colitis-grade-3": 0.010608856088560886,
+        "z-line": 0.08625461254612546
+      },
+      "target_prior": {
+        "barretts": 0.043478260869565216,
+        "barretts-short-segment": 0.043478260869565216,
+        "bbps-0-1": 0.043478260869565216,
+        "bbps-2-3": 0.043478260869565216,
+        "cecum": 0.043478260869565216,
+        "dyed-lifted-polyps": 0.043478260869565216,
+        "dyed-resection-margins": 0.043478260869565216,
+        "esophagitis-a": 0.043478260869565216,
+        "esophagitis-b-d": 0.043478260869565216,
+        "hemorrhoids": 0.043478260869565216,
+        "ileum": 0.043478260869565216,
+        "impacted-stool": 0.043478260869565216,
+        "polyps": 0.043478260869565216,
+        "pylorus": 0.043478260869565216,
+        "retroflex-rectum": 0.043478260869565216,
+        "retroflex-stomach": 0.043478260869565216,
+        "ulcerative-colitis-grade-0-1": 0.043478260869565216,
+        "ulcerative-colitis-grade-1": 0.043478260869565216,
+        "ulcerative-colitis-grade-1-2": 0.043478260869565216,
+        "ulcerative-colitis-grade-2": 0.043478260869565216,
+        "ulcerative-colitis-grade-2-3": 0.043478260869565216,
+        "ulcerative-colitis-grade-3": 0.043478260869565216,
+        "z-line": 0.043478260869565216
+      }
+    }
+  }
+}

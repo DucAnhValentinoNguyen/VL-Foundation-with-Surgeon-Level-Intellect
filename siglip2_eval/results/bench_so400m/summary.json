@@ -1,0 +1,31 @@
+{
+  "model": "google/siglip2-so400m-patch14-384",
+  "precision": "fp16",
+  "n_images": 2168,
+  "n_classes": 23,
+  "zero_shot_best": {
+    "variant": "endoscopy_prompts__closed_set",
+    "balanced_acc": 0.20275478486734472,
+    "macro_f1": 0.13355291908118924
+  },
+  "linear_probe": {
+    "top1": 0.8212634822804314,
+    "balanced_acc": 0.6376188987163716,
+    "macro_f1": 0.6133396790134127
+  },
+  "knn5": {
+    "top1": 0.8289676425269645,
+    "balanced_acc": 0.5783238242990428,
+    "macro_f1": 0.5866870236268162
+  },
+  "retrieval": {
+    "R@1": 0.7966666666666666,
+    "R@5": 0.938,
+    "R@10": 0.9613333333333334,
+    "mAP": 0.5199701402530114,
+    "intra_cos_mean": 0.937292218208313,
+    "inter_cos_mean": 0.8950284123420715,
+    "silhouette_cos": 0.07752858847379684
+  },
+  "importance_weighted_acc": 0.20275478486734463
+}

@@ -1,0 +1,31 @@
+{
+  "model": "google/siglip2-base-patch16-224",
+  "precision": "fp32",
+  "n_images": 2168,
+  "n_classes": 23,
+  "zero_shot_best": {
+    "variant": "generic_prompts__closed_set",
+    "balanced_acc": 0.11215640016042436,
+    "macro_f1": 0.06524302129739286
+  },
+  "linear_probe": {
+    "top1": 0.810477657935285,
+    "balanced_acc": 0.6280081086044279,
+    "macro_f1": 0.6010687855380028
+  },
+  "knn5": {
+    "top1": 0.7781201848998459,
+    "balanced_acc": 0.5341236478132225,
+    "macro_f1": 0.5345402023822237
+  },
+  "retrieval": {
+    "R@1": 0.7653333333333333,
+    "R@5": 0.9366666666666666,
+    "R@10": 0.964,
+    "mAP": 0.4347272260847961,
+    "intra_cos_mean": 0.9416136741638184,
+    "inter_cos_mean": 0.9093645215034485,
+    "silhouette_cos": 0.006932519376277924
+  },
+  "importance_weighted_acc": 0.10542702329490737
+}

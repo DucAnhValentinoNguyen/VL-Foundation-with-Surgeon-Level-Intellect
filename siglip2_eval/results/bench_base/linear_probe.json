@@ -1,0 +1,36 @@
+{
+  "n_train": 1513,
+  "n_test": 649,
+  "kept_classes": [
+    "barretts",
+    "barretts-short-segment",
+    "bbps-0-1",
+    "bbps-2-3",
+    "cecum",
+    "dyed-lifted-polyps",
+    "dyed-resection-margins",
+    "esophagitis-a",
+    "esophagitis-b-d",
+    "impacted-stool",
+    "polyps",
+    "pylorus",
+    "retroflex-rectum",
+    "retroflex-stomach",
+    "ulcerative-colitis-grade-0-1",
+    "ulcerative-colitis-grade-1",
+    "ulcerative-colitis-grade-2",
+    "ulcerative-colitis-grade-2-3",
+    "ulcerative-colitis-grade-3",
+    "z-line"
+  ],
+  "linear_probe": {
+    "top1": 0.810477657935285,
+    "balanced_acc": 0.6280081086044279,
+    "macro_f1": 0.6010687855380028
+  },
+  "knn5": {
+    "top1": 0.7781201848998459,
+    "balanced_acc": 0.5341236478132225,
+    "macro_f1": 0.5345402023822237
+  }
+}
